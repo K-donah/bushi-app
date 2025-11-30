@@ -1,0 +1,231 @@
+/* === MODERN GLASS UI THEME — COMPLETE NEW DESIGN === */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #f5f7fa;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Smooth fade-in */
+body {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Links */
+a {
+  color: #4dd0e1;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: #00e5ff;
+  text-shadow: 0 0 8px rgba(0, 229, 255, 0.6);
+}
+
+/* Glassmorphism containers */
+.glass-box {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 28px;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: 0.3s ease;
+}
+
+.glass-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+  color: #e3f2fd;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 32px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar a {
+  margin-left: 20px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  padding: 24px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(18px);
+  height: 100vh;
+  position: fixed;
+  border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 16px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  color: #cfd8dc;
+  transition: 0.3s ease;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+}
+
+/* Buttons */
+button, .btn {
+  padding: 12px 28px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+  background: linear-gradient(135deg, #00e5ff, #00bcd4);
+  color: #0d1b2a;
+  box-shadow: 0 8px 20px rgba(0,229,255,0.3);
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,229,255,0.4);
+}
+
+/* Outline Button */
+.btn-outline {
+  background: transparent;
+  border: 2px solid #00e5ff;
+  color: #00e5ff;
+}
+
+.btn-outline:hover {
+  background: rgba(0,229,255,0.1);
+}
+
+/* Inputs */
+input, select, textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
+  color: #e1f5fe;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #00e5ff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 229, 255, 0.2);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+th {
+  text-align: left;
+  font-weight: 700;
+  color: #80deea;
+}
+
+tr:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #c9e4ff;
+  max-width: 640px;
+  margin: auto;
+  opacity: 0.9;
+}
+
+.hero .hero-actions {
+  margin-top: 28px;
+}
+
+.hero .hero-actions a {
+  margin: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
